@@ -13,21 +13,53 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <Grid container height="100vh" justifyContent="center" alignItems="center">
-      <Grid item xs={10} height="90%">
-        <Card>
-          <CardContent>
-            <Typography textAlign="center" variant="h3">
-              NEXT BLOG V2 IS COMMING SOON 🦄✨🌈
-            </Typography>
-            <Typography textAlign="center" variant="h6" mt={1.5}>
-              Click Below Button to Check Progress On The Github
-            </Typography>
-            <CardActions sx={{ justifyContent: "center", mt: 2 }}>
-              <Button variant="outlined">Click Me</Button>
-            </CardActions>
-          </CardContent>
-        </Card>
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      maxWidth={{
+        md: 750,
+        lg: 970,
+        xl: 1170,
+      }}
+      margin="0 auto"
+      px={4}
+      minHeight="calc(100vh - 48px - 48px - 64px)"
+    >
+      <Grid item mt={18}>
+        <Typography textAlign="center" variant="h2">
+          NEXT BLOG{" "}
+          <span
+            style={{
+              color: "#4db6ac",
+              paddingLeft: 8,
+              paddingRight: 8,
+            }}
+          >
+            V2
+          </span>{" "}
+          IS COMMING SOON 🦄✨
+        </Typography>
+      </Grid>
+      <Grid item mt={4}>
+        <Typography textAlign="center" variant="h5" mt={1.5}>
+          Click Below Button to Check Progress On The Github
+        </Typography>
+      </Grid>
+      <Grid item mt={8}>
+        <Button
+          sx={{
+            fontSize: 22,
+            width: 320,
+            height: 64,
+            color: "#fff",
+          }}
+          variant="contained"
+          color="secondary"
+          size="large"
+        >
+          Check Now
+        </Button>
       </Grid>
     </Grid>
   );
