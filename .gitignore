@@ -30,8 +30,18 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# OS
+.DS_Store
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
