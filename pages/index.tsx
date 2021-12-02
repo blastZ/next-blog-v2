@@ -18,6 +18,7 @@ const Home: NextPage = () => {
       direction="column"
       alignItems="center"
       maxWidth={{
+        xs: "100%",
         md: 750,
         lg: 970,
         xl: 1170,
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
       px={4}
       minHeight="calc(100vh - 48px - 48px - 64px)"
     >
-      <Grid item mt={18}>
+      <Grid item mt={"16%"}>
         <Typography textAlign="center" variant="h2">
           NEXT BLOG{" "}
           <span
@@ -46,13 +47,14 @@ const Home: NextPage = () => {
           Click Below Button to Check Progress On The Github
         </Typography>
       </Grid>
-      <Grid item mt={8}>
+      <Grid item mt={8} container justifyContent="center">
         <Button
           sx={{
             fontSize: 22,
             width: 320,
             height: 64,
             color: "#fff",
+            maxWidth: "85%",
           }}
           variant="contained"
           color="secondary"
