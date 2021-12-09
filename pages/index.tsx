@@ -49,6 +49,9 @@ const Home: NextPage = () => {
       </Grid>
       <Grid item mt={8} container justifyContent="center">
         <Button
+          onClick={() =>
+            window.open("https://github.com/blastZ/next-blog-v2", "_blank")
+          }
           sx={{
             fontSize: 22,
             width: 320,
