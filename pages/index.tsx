@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       px={4}
       minHeight="calc(100vh - 48px - 48px - 64px)"
     >
-      <Grid item mt={"16%"}>
+      <Grid item mt={"14%"}>
         <Typography textAlign="center" variant="h2">
           NEXT BLOG{" "}
           <span

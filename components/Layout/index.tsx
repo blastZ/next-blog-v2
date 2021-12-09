@@ -10,7 +10,7 @@ export function Layout({ children }: { children: ReactChild | ReactChildren }) {
       <Grid item>
         <Header />
       </Grid>
-      <Grid id="content" item py={6} mt={8}>
+      <Grid id="content" item container py={6} mt={8}>
         {children}
       </Grid>
       <Divider />
